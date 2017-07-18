@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin ="20dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/survey_button"
+                    android:layout_width="0dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/createcase_survey_back"
+                    android:text="@string/createcase_survey"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+
+                <Button
+                    android:id="@+id/repeat_button"
+                    android:layout_width="0dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/createcase_repeat_front"
+                    android:text="@string/createcase_repeat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+            </LinearLayout>
+
+           <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dip"
+                android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/cooperation_button"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/createcase_survey_back"
+                        android:text="@string/repairrecommend_cooperation"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_size" />
+
+                    <Button
+                        android:id="@+id/nocooperation_button"
+                        android:layout_width="0dip"
+                        android:layout_height="50dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/createcase_repeat_front"
+                        android:text="@string/repairrecommend_nocooperation"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/default_size" />
+            
+            </LinearLayout> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/default_edittext_bow_shape"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <EditText
+                        android:id="@+id/casenu_edit"
+                        style="@style/createcase_edittext_no_sharp"
+                        android:layout_width="fill_parent"
+                        android:digits="@string/createcase_digits"
+                        android:layout_height="@dimen/default_edittext_height" />
+
+                    <TextView
+                        style="@style/createcase_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/default_edittext_height"
+                        android:text="@string/createcase_casenu" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/defalut_edit_normal" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip" >
+
+                    <EditText
+                        android:id="@+id/carnu_edit"
+                        style="@style/createcase_edittext_no_sharp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/default_edittext_height" />
+
+                    <TextView
+                        style="@style/createcase_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/default_edittext_height"
+                        android:text="@string/createcase_carnu" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@drawable/default_edittext_bow_shape"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip" >
+
+                    <EditText
+                        android:id="@+id/cardriver_edit"
+                        style="@style/createcase_edittext_no_sharp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/default_edittext_height" />
+
+                    <TextView
+                        style="@style/createcase_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/default_edittext_height"
+                        android:text="@string/createcase_pilot" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/defalut_edit_normal" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="2dip" >
+
+                    <EditText
+                        android:id="@+id/address_edit"
+                        style="@style/createcase_edittext_no_sharp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/default_edittext_height" />
+
+                    <TextView
+                        style="@style/createcase_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/default_edittext_height"
+                        android:text="@string/createcase_address" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/defalut_edit_normal" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip" >
+
+                    <EditText
+                        android:id="@+id/owner_edit"
+                        style="@style/createcase_edittext_no_sharp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/default_edittext_height" />
+
+                    <TextView
+                        style="@style/createcase_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/default_edittext_height"
+                        android:text="@string/createcase_owner" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/defalut_edit_normal" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="2dip" >
+
+                    <EditText
+                        android:id="@+id/phone_edit"
+                        style="@style/createcase_edittext_no_sharp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/default_edittext_height"
+                        android:inputType="number"
+                        android:maxLength="11" />
+
+                    <TextView
+                        style="@style/createcase_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/default_edittext_height"
+                        android:text="@string/createcase_phone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/create"
+                style="@style/casemanage_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/createcase_create" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

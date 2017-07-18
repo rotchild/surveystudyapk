@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+        xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud" />
+
+    <RelativeLayout
+        android:id="@+id/title_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" >
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_edittext_shape"
+            android:minHeight="40dip"
+            android:paddingLeft="35dp" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ui_search" />
+
+        <Button
+            android:id="@+id/deletetext"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="?attr/report_decrease_bg_selector" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/councilor_list"
+        style="@style/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/copyno_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/copyno_image"
+            android:layout_width="@dimen/cry_logo_size"
+            android:layout_height="@dimen/cry_logo_size"
+            android:src="@drawable/cry_logo" />
+
+        <TextView
+            style="@style/cry_logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report_nocopy" />
+    </LinearLayout>
+
+</LinearLayout>

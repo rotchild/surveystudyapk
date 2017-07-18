@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_casedetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <com.whhcxw.ui.Titlebar2
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/casemes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar" >
+
+        <LinearLayout
+            android:id="@+id/casedetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginTop="18dip"
+            android:background="@drawable/casedetails_bg"
+            android:orientation="vertical"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:paddingTop="13dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/car_text"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/car" />
+
+                        <TextView
+                            android:id="@+id/car"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/survey_text"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/survey" />
+
+                        <TextView
+                            android:id="@+id/survey"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="999888" />
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/carmaster_text"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/carmaster" />
+
+                        <TextView
+                            android:id="@+id/carmaster"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="240dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/casenumber_text"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/casenumber" />
+
+                        <TextView
+                            android:id="@+id/casenumber"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/verify_text"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/verify" />
+
+                        <TextView
+                            android:id="@+id/verify"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="549527" />
+                    </LinearLayout>
+                    -->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/phone_text"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phone" />
+
+                        <TextView
+                            android:id="@+id/phone"
+                            style="@style/casedetail_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/time_text"
+                    style="@style/casedetail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/casedetail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            
+            <LinearLayout
+                android:id="@+id/linklayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+               	android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/link_text"
+                    style="@style/casedetail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/link" />
+
+                <TextView
+                    android:id="@+id/link"
+                    style="@style/casedetail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/address_text"
+                    style="@style/casedetail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/casedetail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:paddingTop="8dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/case_details_loop" />
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/casedetails"
+            android:background="@color/case_line"/>
+    </RelativeLayout>
+    
+    <!-- 中间隔栏 -->
+
+    <RelativeLayout
+        android:id="@+id/center_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="38dip"
+        android:layout_below="@id/casemes"
+        android:background="@drawable/ui_title_bg"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/default_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casedetails_picture"
+            android:textSize="14sp" />
+
+        <!-- 编辑按钮隐藏 ，只能拍照，不能删除-->
+        <Button
+            android:id="@+id/editbutton"
+            style="@style/default_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:text="@string/casedetails_edit" 
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/edit_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/surebutton"
+                style="@style/default_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_marginRight="15dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:text="@string/casedetails_sure" />
+
+            <Button
+                android:id="@+id/offbutton"
+                style="@style/default_button"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_marginRight="5dip"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:text="@string/casedetails_off" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        style="@style/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/center_bar"
+        android:layout_marginBottom="66dip"
+        android:fadeScrollbars="true"
+        android:gravity="center_horizontal"
+        android:numColumns="3" >
+    </GridView>
+
+    <LinearLayout 
+		android:id="@+id/nopicture_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_bar"
+        android:layout_marginTop="50dip"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+        
+     <ImageView
+            android:id="@+id/nopicture_image"
+            android:layout_width="@dimen/cry_logo_size"
+            android:layout_height="@dimen/cry_logo_size"
+            android:src="@drawable/cry_logo"/>
+     
+      <TextView
+            style="@style/cry_logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/casedetails_nopicture" />
+     
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="66dip"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ui_title_bg" />
+
+        <LinearLayout
+            android:id="@+id/bottom_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="10dip" >
+
+            <LinearLayout
+                android:id="@+id/userphone_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/userphone_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/casedetails_userphone_bg_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/userphone_text"
+                    style="@style/casedetails_bottom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_userphone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/repair_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/repair_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/casedetails_repair_bg_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/repair_text"
+                    style="@style/casedetails_bottom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_repair" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tackpicture_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/tackpicture_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/casedetails_tackpicture_bg_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/finishcase_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/finishcase_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/casedetails_finishcase_bg_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/finishcase_text"
+                    style="@style/casedetails_bottom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_finishcase" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/more_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/more_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_marginTop="2dip"
+                    android:background="@drawable/casedetails_more_bg_selector" />
+
+                <TextView
+                    android:id="@+id/more_text"
+                    style="@style/casedetails_bottom_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_more" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 更多应用 -->
+
+    <RelativeLayout
+        android:id="@+id/apply_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="66dip"
+            android:background="@drawable/largerdanger_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/large_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dip" >
+
+                <Button
+                    android:id="@+id/large_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/casedetails_large_bg_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/large_text"
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="0.3dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/danger_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dip" >
+
+                <Button
+                    android:id="@+id/danger_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/casedetails_danger_bg_selector" />
+
+                <TextView
+                    android:id="@+id/danger_text"
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_danger" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="0.3dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/dependence_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dip" >
+
+                <Button
+                    android:id="@+id/dependence_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/casedetails_danger_bg_selector" />
+
+                <TextView
+                    android:id="@+id/dependence_text"
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_dependence" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+       xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/default_edittext_bow_shape"
+        android:orientation="vertical" 
+       	android:layout_marginLeft="10dip"
+       	android:layout_marginRight="10dip"
+       	android:layout_marginTop="20dip">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip">
+
+            <EditText
+                android:id="@+id/LTUserName"
+                style="@style/default_edittext_no_shape"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="65dp"
+                android:paddingRight="35dp"
+                android:scrollHorizontally="true"
+                android:hint="@string/login_edituser"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/LUserNameLable"
+                style="@style/login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/login_user" />
+
+            <!-- android:background="@drawable/calluser1" -->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/defalut_edit_normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="5dip">
+
+            <EditText
+                android:id="@+id/LPassWordText"
+                style="@style/default_edittext_no_shape"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/LUserNameLable"
+                android:paddingLeft="65dip"
+                android:password="true"
+                android:hint="@string/login_editpass"
+                android:scrollHorizontally="true"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/LPassWordLabel"
+                style="@style/login_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="@string/login_pass" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="?attr/large_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/login_button" />
+
+</LinearLayout>

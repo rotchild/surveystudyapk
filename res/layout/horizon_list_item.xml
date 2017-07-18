@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+
+   
+        <ImageButton
+            android:id="@+id/horizen_list_item_image"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_above="@+id/horizen_list_item_text"
+            android:layout_marginBottom="5dp"
+            android:duplicateParentState="true"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/horizen_list_item_text"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="首页"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:textColor="@color/skin_casedetail_bottombar_text_color_orange"
+            android:textSize="@dimen/default_title_indicator_text_size" />
+           <!--  
+       <RadioButton
+        android:id="@+id/horizon_RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:textColor="@color/skin_casedetail_bottombar_text_color_orange"
+        android:textSize="@dimen/main_botton_textsize" />
+  -->
+</RelativeLayout>

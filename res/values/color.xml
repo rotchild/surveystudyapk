@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <color name="list_back">#ffffff</color>
+    <color name="list_back_line">#cdcccc</color>
+    <color name="theme_color">#303030</color>
+    
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#f57e14 </color>
+    <color name="red">#FF0000</color>	
+    <color name="gray">#f2f0f0</color>
+    
+    <color name="notnet">#f5f3c5</color>
+    <color name="clarity_red">#88FF0000</color>	
+    
+    <color name="case_line">#cdcccc</color>
+    
+    
+    <color name="default_button_white">#FFFFFF</color>
+  
+    <color name="default_text_white">#FFFFFF</color>
+    <color name="bottom_text_orange">#F57E14</color>
+    
+    <color name="login_black">#000000</color>
+    <color name="login_text_color">#303030</color>
+	<color name="login_edit_white">#FFFFFF</color>
+    
+	<color name="main_search_edit_white">#FFFFFF</color>
+   
+	
+    <color name="list_color">#303030</color>
+    <color name="list_black">#000000</color>
+    
+    <color name="ui_titlebar_pressed_startColor">#ff5a19</color>
+    <color name="ui_titlebar_pressed_endColor">#ff5a19</color>
+	<color name="ui_titlebar_textColor">#FFFFFF</color>
+   
+	<color name="casedetail_bg_white">#FFFFFF</color>
+	
+	<color name="casedetail_black">#000000</color>
+	<color name="casedetail_bottom_text_white">#FFFFFF</color>
+    
+    
+	<color name="casemanage_button_white">#FFFFFF</color>
+	
+	<color name="createcase_edit_white">#FFFFFF</color>
+	<color name="defalut_edit_gray">#f2f0f0</color>
+	
+	<color name="defalut_edit_normal">#d4d4d4</color>
+	<color name="defalut_edit_pressed">#ffbf6c</color>
+	
+	
+	<color name="createcase_edit_text_gray">#f2f0f0</color>
+	
+	<color name="block_solid">#909090</color>
+	
+	<color name="systemcode_text">#575757</color>
+	
+	<color name="cry_logo_text">#717171</color>
+	
+	<color name="bottom_bar_text_color_orange">#ea5901</color>
+	<color name="bottom_bar_text_color_white">#FFFFFF</color>
+	<color name="bottom_bar_text_color_gray">#737373</color>
+	
+	
+	
+	
+	<!-- Table view -->
+	
+	<!-- LIST BORDER COLOR -->
+	<color name="rounded_container_border">#ffb7babb</color>
+
+	<!-- ITEM BACKGROUND COLOR - STATE - DEFAULT -->
+	<color name="base_start_color_default">#FFFFFF</color>
+    <color name="base_end_color_default">#FFFFFF</color>
+    	
+	<!-- ITEM BACKGROUND COLOR - STATE - PRESSED -->
+	<color name="base_start_color_pressed">#ff3590c4</color>
+    <color name="base_end_color_pressed">#ff2570ba</color>
+    
+    <!-- ITEM TEXT COLORS - STATES - PRESSED AND DEFAULT -->
+    <color name="text_color_default">#000000</color>
+    <color name="text_color_pressed">#ffffff</color>
+</resources>

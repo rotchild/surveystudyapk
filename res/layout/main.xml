@@ -1,0 +1,417 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+        xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud" />
+
+    <LinearLayout
+        android:id="@+id/title_search"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/titlebar"
+        android:background="?attr/search_bar_backgroud"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1" >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_edittext_shape"
+                android:minHeight="40dip"
+                android:paddingLeft="35dp" />
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ui_search" />
+
+            <Button
+                android:id="@+id/deletetext"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="?attr/report_decrease_bg_selector" />
+        </RelativeLayout>
+
+        <!-- 取消按钮隐藏 -->
+
+        <Button
+            android:id="@+id/button"
+            style="@style/default_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            android:text="@string/title_button_cancel"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 网络状态检查 -->
+
+    <LinearLayout
+        android:id="@+id/checkconnection_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_search"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/notnet"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notnet" />
+
+            <TextView
+                style="@style/list_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="@string/main_notnet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_back_line" />
+    </LinearLayout>
+    <!-- 维修厂接待员   显示维修厂信息 -->
+
+    <LinearLayout
+        android:id="@+id/repairfactory_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkconnection_layout"
+        android:layout_margin="10dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/factoryname"
+            style="@style/list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_back_line" />
+
+        <TextView
+            android:id="@+id/factoryaddress"
+            style="@style/list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/factorymoney"
+                style="@style/list_text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/areaname"
+                style="@style/list_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="200dip"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repairfactory_layout"
+        android:layout_gravity="center"
+        android:layout_marginBottom="55dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/bottom_bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radiogroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/current_RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/main_bottombar_current_bg"
+                android:button="@null"
+                android:drawableTop="?attr/main_bottombar_current_drawable"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/main_current_task"
+                android:textColor="?attr/main_bottombar_current_color"
+                android:textSize="@dimen/main_botton_textsize" />
+
+            <RadioButton
+                android:id="@+id/finish_RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/main_bottombar_finish_bg"
+                android:button="@null"
+                android:drawableTop="?attr/main_bottombar_finish_drawable"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/main_finish_task"
+                android:textColor="?attr/main_bottombar_finish_color"
+                android:textSize="@dimen/main_botton_textsize" />
+
+            <RadioButton
+                android:id="@+id/all_RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/main_bottombar_all_bg"
+                android:button="@null"
+                android:drawableTop="?attr/main_bottombar_all_drawable"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/main_all_task"
+                android:textColor="?attr/main_bottombar_all_color"
+                android:textSize="@dimen/main_botton_textsize" />
+
+            <RadioButton
+                android:id="@+id/delete_RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="?attr/main_bottombar_delete_bg"
+                android:button="@null"
+                android:drawableTop="?attr/main_bottombar_delete_drawable"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/main_delete_task"
+                android:textColor="?attr/main_bottombar_delete_color"
+                android:textSize="@dimen/main_botton_textsize"
+                android:visibility="gone" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- 设置 -->
+
+    <RelativeLayout
+        android:id="@+id/set_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dip"
+            android:background="?attr/main_setting_pop"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/main_create_layout"
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/create_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/main_create_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/create_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/main_cretae_task"
+                    android:textColor="?attr/main_bottombar_current_color"
+                    android:textSize="@dimen/default_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/main_into_layout"
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/into_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/main_into_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/into_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/main_into_task"
+                    android:textColor="?attr/main_bottombar_current_color"
+                    android:textSize="@dimen/default_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/main_pushmessage_layout"
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/pushmessage_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/main_pushmessage_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/pushmessage_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/main_pushmessage_task"
+                    android:textColor="?attr/main_bottombar_current_color"
+                    android:textSize="@dimen/default_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line3"
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="1dip"
+                android:background="@color/gray"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:id="@+id/main_set_layout"
+                android:layout_width="@dimen/popupwindow_width"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/set_button"
+                    android:layout_width="34dip"
+                    android:layout_height="32dip"
+                    android:background="@drawable/main_set_selector"
+                    android:paddingBottom="2dip"
+                    android:paddingTop="2dip" />
+
+                <TextView
+                    android:id="@+id/set_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/main_set_task"
+                    android:textColor="?attr/main_bottombar_current_color"
+                    android:textSize="@dimen/default_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/delete_button"
+            style="?attr/large_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:text="@string/main_delete_button" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="?attr/large_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="@string/main_cancel_button" />
+    </LinearLayout>
+
+</RelativeLayout>

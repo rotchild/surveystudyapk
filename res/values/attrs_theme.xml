@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <attr name="titlebar_backgroud" format="reference"/>
+     <attr name="titlebar_left_backgroud" format="reference"/>
+     <attr name="titlebar_right_backgroud" format="reference"/>
+     <attr name="search_bar_backgroud" format="reference"/>
+     <attr name="bottom_bar_bg" format="reference"/>
+     <attr name="large_button" format="reference"/>
+     <attr name="bottom_bar_capture" format="reference"/>
+     <attr name="welcome_bg" format="reference"/>
+     <attr name="casedetail_textcolor" format="reference"/>
+     
+     <attr name="main_bottombar_current_drawable" format="reference"/>
+     <attr name="main_bottombar_current_bg" format="reference"/>
+     <attr name="main_bottombar_current_color" format="reference"/>
+     
+     <attr name="main_bottombar_all_drawable" format="reference"/>
+     <attr name="main_bottombar_all_bg" format="reference"/>
+     <attr name="main_bottombar_all_color" format="reference"/>
+     
+     <attr name="main_bottombar_finish_drawable" format="reference"/>
+     <attr name="main_bottombar_finish_bg" format="reference"/>
+     <attr name="main_bottombar_finish_color" format="reference"/>
+     
+     <attr name="main_bottombar_delete_drawable" format="reference"/>
+     <attr name="main_bottombar_delete_bg" format="reference"/>
+     <attr name="main_bottombar_delete_color" format="reference"/>
+     
+     <attr name="main_setting_pop" format="reference"/>
+     <attr name="version_logo_bg" format="reference"/>
+     <attr name="version_text_color" format="reference"/>
+     
+     <attr name="app_logo" format="reference"/>
+     
+     <attr name="report_decrease_bg_selector" format="reference"/>
+     
+     <attr name="report_add_bg_selector" format="reference"/>
+</resources>

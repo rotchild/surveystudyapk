@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_back"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.PullDownListView
+        android:id="@+id/delete_pullDownListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/delete_list"
+            style="@style/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </com.whhcxw.ui.PullDownListView>
+
+ 
+    
+     <LinearLayout
+        android:id="@+id/deletenocase_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/deletenocase_image"
+            android:layout_width="@dimen/cry_logo_size"
+            android:layout_height="@dimen/cry_logo_size"
+            android:src="@drawable/cry_logo" />
+
+        <TextView
+            style="@style/cry_logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_delete_nocase" />
+    </LinearLayout>
+    
+    
+</RelativeLayout>

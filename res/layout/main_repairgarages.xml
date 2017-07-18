@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+       xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+   		 <ListView
+	        android:id="@+id/repairgarages_list"
+	        style="@style/listView"
+	        android:layout_below="@id/titlebar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"/> 
+	
+	      <LinearLayout
+	        android:id="@+id/repairgarages_layout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:paddingTop="200dip"
+	        android:orientation="vertical"
+	        android:visibility="gone" >
+	
+	        <ImageView
+	            android:id="@+id/repairGarages_logo"
+	            android:layout_width="@dimen/cry_logo_size"
+	            android:layout_height="@dimen/cry_logo_size"
+	            android:src="@drawable/cry_logo" />
+	
+	        <TextView
+	            style="@style/cry_logo_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/repairrecommend_nofactory" />
+	    </LinearLayout> 
+
+	    <!-- <Button
+	        android:id="@+id/button"
+	        style="@style/repairgarages_button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:text="@string/casemanage_button" 
+	        android:visibility="gone"/> -->
+</RelativeLayout>

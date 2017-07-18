@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/current_listview_item_selector" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="5dip">
+
+        <TextView
+            android:id="@+id/car"
+            style="@style/list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image"
+            android:gravity="center_vertical"
+            android:paddingTop="10dip"
+            android:text="赣A76220"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/report"
+            style="@style/list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="00-1303411100" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/report"
+            android:layout_marginTop="5dip"
+            android:text="03-11 12:33" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@id/imageview"
+            android:layout_toRightOf="@+id/image"
+            android:text="江西" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/list_back_line" />
+
+</RelativeLayout>

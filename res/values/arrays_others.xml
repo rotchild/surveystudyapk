@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- report -->
+    <string-array name="report_case_array" translatable="false">
+        <item>@string/report_case_process1</item>
+        <item>@string/report_case_process2</item>
+        <item>@string/report_case_process3</item>
+        <item>@string/report_case_process4</item>
+        <item>@string/report_case_process5</item>
+        <item>@string/report_case_process6</item>
+        <item>@string/report_case_process7</item>
+    </string-array>
+    <string-array name="report_case_array_num" translatable="false">
+        <item>@string/report_case_process1_num1</item>
+        <item>@string/report_case_process2_num2</item>
+        <item>@string/report_case_process3_num3</item>
+        <item>@string/report_case_process4_num4</item>
+        <item>@string/report_case_process5_num5</item>
+        <item>@string/report_case_process6_num6</item>
+    </string-array>
+    
+    <string-array name="create_case_info_items_insurance_company" translatable="false">
+        <item >@string/insurance_company_0</item>
+        <item >@string/insurance_company_1</item>
+        <item >@string/insurance_company_2</item>
+        <item >@string/insurance_company_3</item>
+    </string-array>
+    
+    <string-array name="create_case_info_items_accident_type" translatable="false">
+        <item >@string/accident_type_0</item>
+        <item >@string/accident_type_1</item>
+        <item >@string/accident_type_2</item>
+    </string-array>
+    
+    
+    <string-array name="system_roleType_array_values" translatable="false">
+        <item >@string/RoleType_M001_vaue</item>
+        <item >@string/RoleType_M002_vaue</item>
+        <item >@string/RoleType_M003_vaue</item>
+        <item >@string/RoleType_M004_vaue</item>
+        <item >@string/RoleType_M005_vaue</item>
+        <item >@string/RoleType_M006_vaue</item>
+        <item >@string/RoleType_M007_vaue</item>
+        <item >@string/RoleType_M008_vaue</item>
+        <item >@string/RoleType_M009_vaue</item>
+        <item >@string/RoleType_M010_vaue</item>
+        <item >@string/RoleType_M011_vaue</item>
+        <item >@string/RoleType_M012_vaue</item>
+        <item >@string/RoleType_M013_vaue</item>
+    </string-array>
+    <string-array name="system_roleType_array_name" translatable="false">
+        <item >@string/RoleType_M001_name</item>
+        <item >@string/RoleType_M002_name</item>
+        <item >@string/RoleType_M003_name</item>
+        <item >@string/RoleType_M004_name</item>
+        <item >@string/RoleType_M005_name</item>
+        <item >@string/RoleType_M006_name</item>
+        <item >@string/RoleType_M007_name</item>
+        <item >@string/RoleType_M008_name</item>
+        <item >@string/RoleType_M009_name</item>
+        <item >@string/RoleType_M010_name</item>
+        <item >@string/RoleType_M011_name</item>
+        <item >@string/RoleType_M012_name</item>
+        <item >@string/RoleType_M013_name</item>
+    </string-array>
+    <string-array name="system_roleType_array_values_default" translatable="false">
+        <item >@string/RoleType_detault_vaue1</item>
+        <item >@string/RoleType_detault_vaue2</item>
+        
+    </string-array>
+    <string-array name="system_roleType_array_name_default" translatable="false">
+        <item >@string/RoleType_detault_name1</item>
+        <item >@string/RoleType_detault_name2</item>
+        
+    </string-array>
+    
+
+</resources>

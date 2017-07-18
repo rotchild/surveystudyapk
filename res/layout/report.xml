@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+       xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/default_edittext_bow_shape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/councilor_text"
+                style="@style/report_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/councilor"
+                style="@style/report_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dip"
+                android:layout_toRightOf="@id/councilor_text" />
+
+            <Button
+                android:id="@+id/councilor_button"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/report_add_bg_selector" />
+
+            <Button
+                android:id="@+id/councilor_decrease_button"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/report_decrease_bg_selector"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+         <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:background="@color/defalut_edit_normal" />
+        
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/copy_text"
+                style="@style/report_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/report_copy" />
+
+            <TextView
+                android:id="@+id/copy"
+                style="@style/report_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dip"
+                android:layout_toRightOf="@id/copy_text" />
+
+            <Button
+                android:id="@+id/copy_button"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/report_add_bg_selector" />
+
+            <Button
+                android:id="@+id/copy_decrease_button"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignBottom="@id/copy"
+                android:layout_alignParentRight="true"
+                android:background="?attr/report_decrease_bg_selector"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 
+    <EditText
+        android:id="@+id/edittext"
+        style="@style/report_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dip"
+        android:background="@drawable/default_edittext_shape"
+        android:gravity="left|top"
+        android:hint="@string/report_describe"
+        android:lines="6" />
+ -->
+ 
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/report_mail_content_btn"
+                style="@style/systemsetting_button"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="left|center_vertical"
+                android:text="@string/report_describe" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/triangle_right" />
+    </RelativeLayout>
+    
+       <TextView
+        android:id="@+id/report_mail_preview"
+        style="@style/report_text"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dip"
+        android:layout_weight="0.2"
+        android:background="@drawable/default_edittext_shape"
+        android:scrollbars="vertical"
+        android:gravity="left|top"
+       />
+     
+     
+    <Button
+        android:id="@+id/sent"
+        style="?attr/large_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:text="@string/title_send" />
+    
+</LinearLayout>

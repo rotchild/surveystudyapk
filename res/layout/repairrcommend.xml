@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+       xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:layout_marginLeft ="10dip"
+        android:layout_marginRight ="10dip"
+        android:layout_marginTop ="20dip"
+        android:layout_marginBottom ="10dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cooperation_button"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/createcase_survey_back"
+            android:text="@string/repairrecommend_cooperation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_size" />
+
+        <Button
+            android:id="@+id/nocooperation_button"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/createcase_repeat_front"
+            android:text="@string/repairrecommend_nocooperation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_size" />
+    </LinearLayout>
+
+    <!-- 车行保单 -->
+
+    <LinearLayout
+        android:id="@+id/cooperation_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_layout"
+        android:layout_margin="10dip"
+        android:background="@drawable/default_edittext_bow_shape"
+        android:orientation="vertical"
+        android:padding="1dip" >
+
+        <RelativeLayout
+            android:id="@+id/organization_layou"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repairrecommend_button_top_acr_bg_selector"
+            android:minHeight="40dip" >
+
+            <TextView
+                style="@style/repairrecommend_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/repairrecommend_organization" />
+
+            <ImageView
+                android:id="@+id/organization_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/triangle_right" />
+
+            <TextView
+                android:id="@+id/alery_organization_view"
+                style="@style/repairrecommend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/organization_image"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_back_line" />
+
+        <RelativeLayout
+            android:id="@+id/enterprise_layou"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repairrecommend_button_no_acr_bg_selector"
+            android:minHeight="40dip">
+
+            <TextView
+                style="@style/repairrecommend_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/repairrecommend_enterprise" />
+
+            <ImageView
+                android:id="@+id/enterprise_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/triangle_right" />
+
+            <TextView
+                android:id="@+id/alery_enterprise_view"
+                style="@style/repairrecommend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/enterprise_image"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_back_line" />
+
+        <RelativeLayout
+            android:id="@+id/category_layou"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repairrecommend_button_no_acr_bg_selector"
+            android:minHeight="40dip" >
+
+            <TextView
+                style="@style/repairrecommend_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/repairrecommend_category" />
+
+            <ImageView
+                android:id="@+id/category_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/triangle_right" />
+
+            <TextView
+                android:id="@+id/alery_category_view"
+                style="@style/repairrecommend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/category_image"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_back_line" />
+
+        <RelativeLayout
+            android:id="@+id/cooperation_alery_factory_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repairrecommend_button_bottom_acr_bg_selector" >
+
+            <ImageView
+                android:id="@+id/cooperation_factory_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/triangle_right" />
+
+            <LinearLayout
+                android:id="@+id/cooperation_factory_layou"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/cooperation_factory_image"
+                android:minHeight="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/repairrecommend_text"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/repairrecommend_factory" />
+
+                <TextView
+                    android:id="@+id/alery_cooperation_garages_view"
+                    style="@style/repairrecommend_text"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="230dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alery_cooperation_garagesaddress_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cooperation_factory_layou"
+                android:layout_toLeftOf="@id/cooperation_factory_image"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/cooperation_garages_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip" 
+                    />
+
+                <TextView
+                    android:id="@+id/cooperation_garages_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip" 
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 非车行保单 -->
+
+    <LinearLayout
+        android:id="@+id/nocooperation_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_layout"
+        android:layout_margin="10dip"
+        android:background="@drawable/default_edittext_bow_shape"
+        android:orientation="vertical"
+        android:padding="1dip"
+        android:visibility="gone"  >
+
+        <RelativeLayout
+            android:id="@+id/no_organization_layou"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repairrecommend_button_top_acr_bg_selector"
+            android:minHeight="40dip" >
+
+            <TextView
+                style="@style/repairrecommend_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/repairrecommend_organization" />
+
+            <ImageView
+                android:id="@+id/no_organization_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/triangle_right" />
+
+            <TextView
+                android:id="@+id/alery_no_organization_view"
+                style="@style/repairrecommend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/no_organization_image"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_back_line" />
+        
+        <RelativeLayout
+            android:id="@+id/cartype_layou"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repairrecommend_button_top_acr_bg_selector"
+            android:minHeight="40dip" >
+
+            <TextView
+                style="@style/repairrecommend_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/repairrecommend_brand" />
+
+            <ImageView
+                android:id="@+id/cartype_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/triangle_right" />
+
+            <TextView
+                android:id="@+id/alery_cartype_view"
+                style="@style/repairrecommend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/cartype_image"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/list_back_line" />
+
+        <RelativeLayout
+            android:id="@+id/factory_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/repairrecommend_button_bottom_acr_bg_selector" >
+
+            <ImageView
+                android:id="@+id/factory_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/triangle_right" />
+
+            <LinearLayout
+                android:id="@+id/factory_layou"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/factory_image"
+                android:minHeight="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/repairrecommend_text"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/repairrecommend_factory" />
+
+                <TextView
+                    android:id="@+id/alery_garages_view"
+                    style="@style/repairrecommend_text"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="230dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alery_garagesaddress_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/factory_layou"
+                android:layout_toLeftOf="@id/factory_image"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/garages_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip" />
+
+                <TextView
+                    android:id="@+id/garages_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="?attr/large_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dip"
+        android:text="@string/repairrecommend_sure" />
+
+</RelativeLayout>

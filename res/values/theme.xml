@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+       <style name="app_skin_orange" parent="app_theme">
+         <item name="titlebar_backgroud">@drawable/ui_title_bg_orange</item>
+         <item name="titlebar_left_backgroud">@drawable/ui_titlebar_bg_selector_orange</item>
+         <item name="titlebar_right_backgroud">@drawable/ui_titlebar_bg_selector_orange</item>
+         <item name="search_bar_backgroud">@drawable/ui_title_bg_orange</item>
+         <item name="bottom_bar_bg">@drawable/ui_bottombar_bg</item>
+         <item name="large_button">@style/casemanage_button_orange</item>
+         <item name="bottom_bar_capture">@drawable/casedetails_tackpicture_bg_selector_orange</item>
+         <item name="welcome_bg">@drawable/default_logo_orange</item>
+         <item name="casedetail_textcolor">@color/skin_casedetail_bottombar_text_color_orange</item>
+         
+         <item name="main_bottombar_current_drawable">@drawable/main_bottombar_current_task_selector_orange</item>
+         <item name="main_bottombar_current_color">@color/skin_main_bottombar_text_color_orange</item>
+         <item name="main_bottombar_current_bg">@android:color/transparent</item>
+         
+         <item name="main_bottombar_all_drawable">@drawable/main_bottombar_all_task_selector_orange</item>
+         <item name="main_bottombar_all_color">@color/skin_main_bottombar_text_color_orange</item>
+         <item name="main_bottombar_all_bg">@android:color/transparent</item>
+         
+         <item name="main_bottombar_finish_drawable">@drawable/main_bottombar_finish_task_selector_orange</item>
+         <item name="main_bottombar_finish_color">@color/skin_main_bottombar_text_color_orange</item>
+         <item name="main_bottombar_finish_bg">@android:color/transparent</item>
+         
+         <item name="main_bottombar_delete_drawable">@drawable/main_bottombar_delete_task_selector_orange</item>
+         <item name="main_bottombar_delete_color">@color/skin_main_bottombar_text_color_orange</item>
+         <item name="main_bottombar_delete_bg">@android:color/transparent</item>
+         
+         
+         <item name="main_setting_pop">@drawable/more_apply_orange</item>
+         
+          <item name="version_logo_bg">@drawable/logo_code_orange</item>
+          <item name="version_text_color">@color/bottom_bar_text_color_orange</item>
+          <item name="app_logo">@drawable/logo_code_orange</item>
+         
+          <item name="report_decrease_bg_selector">@drawable/report_decrease_bg_selector_orange</item>
+          
+          <item name="report_add_bg_selector">@drawable/report_add_bg_selector_orange</item>
+    </style>
+    
+    <style name="app_skin_black" parent="app_theme">
+         <item name="titlebar_backgroud">@drawable/ui_title_bg</item>
+         <item name="titlebar_left_backgroud">@drawable/ui_titlebar_bg_selector</item>
+         <item name="titlebar_right_backgroud">@drawable/ui_titlebar_bg_selector</item>
+         <item name="search_bar_backgroud">@drawable/ui_title_bg</item>
+         <item name="bottom_bar_bg">@drawable/ui_title_bg</item>
+         <item name="large_button">@style/casemanage_button</item>
+         <item name="bottom_bar_capture">@drawable/casedetails_tackpicture_bg_selector</item>
+         <item name="welcome_bg">@drawable/default_logo</item>
+         <item name="casedetail_textcolor">@color/skin_casedetail_bottombar_text_color_default</item>
+         
+         <item name="main_bottombar_current_drawable">@drawable/main_bottombar_current_task_selector_default</item>
+         <item name="main_bottombar_current_color">@color/skin_main_bottombar_text_color_default</item>
+         <item name="main_bottombar_current_bg">@drawable/main_bottombar_bg_selector_default</item>
+         
+         <item name="main_bottombar_all_drawable">@drawable/main_bottombar_all_task_selector_default</item>
+         <item name="main_bottombar_all_color">@color/skin_main_bottombar_text_color_default</item>
+         <item name="main_bottombar_all_bg">@drawable/main_bottombar_bg_selector_default</item>
+         
+         <item name="main_bottombar_finish_drawable">@drawable/main_bottombar_finish_task_selector_default</item>
+         <item name="main_bottombar_finish_color">@color/skin_main_bottombar_text_color_default</item>
+         <item name="main_bottombar_finish_bg">@drawable/main_bottombar_bg_selector_default</item>
+         
+         <item name="main_bottombar_delete_drawable">@drawable/main_bottombar_delete_task_selector_default</item>
+         <item name="main_bottombar_delete_color">@color/skin_main_bottombar_text_color_default</item>
+         <item name="main_bottombar_delete_bg">@drawable/main_bottombar_bg_selector_default</item>
+         
+         <item name="main_setting_pop">@drawable/more_apply</item>
+         
+         <item name="version_logo_bg">@drawable/logo_code</item>
+         <item name="version_text_color">@color/systemcode_text</item>
+         <item name="app_logo">@drawable/logo_code_orange</item>
+         
+          <item name="report_decrease_bg_selector">@drawable/report_decrease_bg_selector</item>
+          <item name="report_add_bg_selector">@drawable/report_add_bg_selector</item>
+    </style>
+    
+    <style name="app_skin_default" parent="app_skin_orange"></style>
+    
+ 
+</resources>

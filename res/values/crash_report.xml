@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 77409273@qq.com  cj81810296   1613949498@qq.com whhcxw-->
+    <string name="crashReport_mailAccount">1613949498@qq.com</string>
+    <string name="crashReport_mailPassword">whhcxw</string>    
+</resources>

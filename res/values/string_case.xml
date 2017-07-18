@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 创建案件 -->
+    <!-- 默认 -->
+      <string name="create_case_person">任务受理人:</string>
+      <string name="create_case_caseType">案件类型:</string>
+      
+    <!-- 必填 -->
+    <string name="create_case_caseno">案\u0020\u0020件\u0020\u0020号:</string>
+    <string name="create_case_carNo">车\u0020\u0020牌\u0020\u0020号:</string>
+    <string name="create_case_commpany">保险公司:</string>
+    
+    
+    <!-- 选填 -->
+    <string name="create_case_driver">驾\u0020\u0020驶\u0020\u0020员:</string>
+    <string name="create_case_tel">联系电话:</string>
+    <string name="create_case_address">出险地点:</string>
+    <string name="create_case_time">出险时间:</string>
+    <string name="create_case_accident_type">事故种类：</string>
+    <string name="create_case_band">厂牌型号:</string>
+    <string name="create_case_insured">被保险人:</string>
+    <string name="create_case_evaluate">公\u0020\u0020估\u0020\u0020费:</string>
+    <string name="create_case_payType">公估费收取方式:</string>
+    <string name="create_case_accident_history">事故经过:</string>
+    <string name="create_case_others">备注:</string>
+    
+    <!-- 保险公司 -->
+    <string name="insurance_company_0">中国人保</string>
+    <string name="insurance_company_1">中国太平洋保险</string>
+    <string name="insurance_company_2">中国平安</string>
+    <string name="insurance_company_3">太平保险</string>
+    
+    <!-- 事故类型-->
+    <string name="accident_type_0">单方事故</string>
+    <string name="accident_type_1">双方事故</string>
+    <string name="accident_type_2">多方事故</string>
+    
+    <string name="create_case_tips1">请输入</string>
+    <string name="create_case_tips2">（不得多于25个字）</string>
+    <string name="create_case_tips3">不得输入多于25个字</string>
+    
+</resources>

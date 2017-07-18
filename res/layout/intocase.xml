@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+    <com.whhcxw.ui.Titlebar2
+       xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:paddingBottom="5dip"
+        android:background="@drawable/list_back">
+
+        <ListView
+            android:id="@+id/intocase_list"
+            style="@style/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="180dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/create_button"
+            style="?attr/large_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:text="@string/intocase_create" />
+
+        <Button
+            android:id="@+id/clear_button"
+          style="?attr/large_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="@string/intocase_clear" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        style="@style/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_above="@id/button_layout"
+        android:layout_marginBottom="10dip"
+        android:background="@color/white"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/over_mess_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intocase_time" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2013-4-24 11:33:00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intocase_phone" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18271836280" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intocase_mes" />
+
+                <TextView
+                    android:id="@+id/into_over"
+                    style="@style/list_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="南昌文化大道发生交通事故，道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽道发生交通事故，请相关人员能尽请相关人员能尽快到现场查勘" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/scrollview"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:text="合并后的短信"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

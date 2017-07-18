@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dip</dimen>
+    <dimen name="activity_vertical_margin">16dip</dimen>
+
+    <dimen name="default_edittext_height">40dip</dimen>
+    
+    <dimen name="popupwindow_width">130dip</dimen>
+    
+    <!-- <dimen name="button_size">14sp</dimen> -->
+    <dimen name="button_size">14dip</dimen>
+    <!-- <dimen name="default_size">16sp</dimen> -->
+    <dimen name="default_size">16dip</dimen>
+  	<!-- <dimen name="login_text_size">16sp</dimen> -->
+  	<dimen name="login_text_size">16dip</dimen>
+  	
+  	<!-- <dimen name="casedetails_bottom_text_size">10sp</dimen> -->
+  	<dimen name="casedetails_bottom_text_size">10dip</dimen>
+    <!-- <dimen name="list_size">14sp</dimen> -->
+     <dimen name="list_size">14dip</dimen>
+    
+    <!-- <dimen name="ui_titlebar_centerTxt_textSize">25sp</dimen> -->
+    <dimen name="ui_titlebar_centerTxt_textSize">25dip</dimen>
+    
+    
+    <!-- <dimen name="ui_titlebar_textSize">12sp</dimen> -->
+    <dimen name="ui_titlebar_textSize">12dip</dimen>
+    
+    
+    <!-- <dimen name="casedetails_size">14sp</dimen> -->
+    <dimen name="casedetails_size">14dip</dimen>
+    
+    <!-- <dimen name="casemanage_button_size">18sp</dimen> -->
+    <dimen name="casemanage_button_size">18dip</dimen>
+    
+    <!-- <dimen name="createcase_edit_size">14sp</dimen> -->
+    <dimen name="createcase_edit_size">14dip</dimen>
+    
+    
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen>
+    
+    <dimen name="block_radous">3dip</dimen>
+   <!--  <dimen name="repairrecommend_size">14sp</dimen> -->
+    <dimen name="repairrecommend_size">14dip</dimen>
+    
+    <!-- <dimen name="settingip_edit_size">14sp</dimen> -->
+    <dimen name="settingip_edit_size">14dip</dimen>
+    
+    <dimen name="cry_logo_size">51dip</dimen>
+     <!-- <dimen name="cry_logo_textsize">14sp</dimen> -->
+     <dimen name="cry_logo_textsize">14dip</dimen>
+     
+     <!-- <dimen name="main_botton_textsize">10sp</dimen> -->
+     <dimen name="main_botton_textsize">10dip</dimen>
+     <dimen name="default_title_indicator_text_size">10.0dip</dimen>
+     
+</resources>

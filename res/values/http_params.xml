@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 编码格式 -->
+    <string name="http_charset">UTF-8</string>
+    <!-- 超时时间 :ms -->
+	<integer name="http_time_out">15000</integer>
+	
+	
+	<string name="url_UserCheck">MobileCheckService/UserCheck</string>
+	<string name="url_GetTaskList">MobileCheckService/GetTaskList</string>
+	<string name="url_CreateTask">MobileCheckService/CreateTask</string>
+	<string name="url_UpdateTask">MobileCheckService/UpdateTask</string>
+	<string name="url_ReplyTask">MobileCheckService/ReplyTask</string>
+	<string name="url_UploadFiles">MobileCheckService/UploadFiles</string>
+	<string name="url_GetCarTypeList">MobileCheckService/GetCarTypeList</string>
+	<string name="url_GetGarageList">MobileCheckService/GetGarageList</string>
+	<string name="url_GetUserList">MobileCheckService/GetUserList</string>
+	<string name="url_ReportTask">MobileCheckService/ReportTask</string>
+	<string name="url_BindPushUser">MobileCheckService/BindPushUser</string>
+	<string name="url_GetPictures">MobileCheckService/GetPictures</string>
+	<string name="url_GetVersion">MobileCheckService/GetVersionInfo</string>
+	<string name="url_GetGarageInfo">MobileCheckService/GetGarageInfo</string>
+	<string name="url_GetAreaList">MobileCheckService/GetAreaList</string>
+	<string name="url_QueryTasks">MobileCheckService/QueryTasks</string>
+	<string name="url_SendLocationLog">MobileCheckService/SendLocationLog</string>
+	<string name="url_UnBindPushUser">MobileCheckService/UnBindPushUser</string>
+	<string name="url_GetInsuranceList">MobileCheckService/GetInsuranceList</string>
+	<string name="url_GetDicts">MobileCheckService/GetDicts</string>
+	<string name="url_GetRoleDicts">MobileCheckService/GetRoleDicts</string>
+	<string name="url_ChangePassWord">MobileCheckService/ChangePassword</string>
+	<string name="url_Connection">MobileCheckService/Connection</string>
+	<!-- <string name="url_GetPictures">Pics</string>  -->
+	
+	<!-- 更改江西与人保时，照片水印图标需要改 -->
+	<string name="base_url">@string/renbao_url</string>
+	
+	<string name="jiangxi_url">http://171.34.69.134:8801/</string> 
+	<string name="debug_url">http://192.168.1.119:3000/</string>
+	<string name="jxpa_debug_url">http://192.168.1.165:8801/</string>
+	<string name="ydgg_debug_url">http://192.168.1.166:3000/</string>
+	<string name="test_url">http://42.96.199.56:8801/</string>
+	<string name="yddg_url">http://119.164.218.229:3000/</string>
+	<string name="jxpa_url">http://192.168.1.119:8000/</string>
+	<string name="renbao_url">http://115.29.151.5:3000/</string>
+	<string name="YL_url">http://192.168.1.191:3000/</string>
+	
+	
+	<string name="request_loading">正在请求网络...</string>
+	<string name="request_erroe_connect">网络连接错误</string>
+	<string name="project_name">MobileCheck</string>
+	
+	<string name="BaiduMobAd_STAT_ID_chenjun864">b7dfdf966d</string>
+	
+	<!-- 发送错误日志的时间 -->
+	<string name="senderror_date">10:00:00</string>
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <com.whhcxw.ui.Titlebar2
+        xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/usermes_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <Button
+                    android:id="@+id/usermes"
+                    style="@style/systemsetting_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/systemsetting_username"
+                    android:textColor="@color/black" />
+                
+                   <ImageView
+                    android:id="@+id/usermesimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/triangle_right" />
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+					android:layout_toLeftOf="@id/usermesimage"
+                    android:layout_centerVertical="true"
+                     android:layout_marginRight="10dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bound_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <Button
+                    android:id="@+id/bound_button"
+                    style="@style/systemsetting_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/systemsetting_bound"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/bound_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/idlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <Button
+                    android:id="@+id/setID"
+                    style="@style/systemsetting_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="@string/systemsetting_setID" />
+
+                <ImageView
+                    android:id="@+id/idimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/triangle_right" />
+
+                <TextView
+                    android:id="@+id/ip_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@id/idimage"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+            </RelativeLayout>
+
+            <!--
+    <LinearLayout
+        android:id="@+id/idlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usermes_layout"
+        android:layout_margin="10dip"
+        android:background="@drawable/default_edittext_bow_shape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip" >
+
+            <Button
+                android:id="@+id/setID"
+                style="@style/default_edittext_no_shape"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="@string/systemsetting_setID" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/triangle_right" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/defalut_edit_normal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip" >
+
+            <Button
+                android:id="@+id/setvideoID"
+                style="@style/default_edittext_no_shape"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="@string/systemsetting_video" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/triangle_right" />
+        </RelativeLayout>
+    </LinearLayout>-->
+    
+    
+     <RelativeLayout
+              android:id="@+id/systemcode_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <Button
+                    android:id="@+id/systemcode"
+                    style="@style/systemsetting_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dip"
+                  android:text="@string/systemsetting_code" />
+
+                <ImageView
+                    android:id="@+id/systemcode_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/triangle_right" />
+
+                <TextView
+                    android:id="@+id/systemcode_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:layout_toLeftOf="@id/systemcode_image"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+            </RelativeLayout>
+    
+  <RelativeLayout
+              android:id="@+id/exception_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <Button
+                    android:id="@+id/exception"
+                    style="@style/systemsetting_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dip"
+                  android:text="@string/systemsetting_exception" />
+
+                <TextView
+                    android:id="@+id/exception_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+            </RelativeLayout>
+     
+     
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="15dip" >
+
+                <TextView
+                    android:id="@+id/theme_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/systemsetting_theme_set"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/theme_text"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/block"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_margin="10dip"
+                        android:background="@color/black"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/systemsetting_theme_block" />
+
+                    <RadioButton
+                        android:id="@+id/orange"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_margin="10dip"
+                        android:background="@color/orange"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/systemsetting_theme_orange" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/logout_button"
+                style="?attr/large_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:text="@string/systemsetting_logout" />
+
+            <Button
+                android:id="@+id/exit_button"
+                style="?attr/large_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/systemseting_exit" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+    android:id="@+id/main_casedetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg" >
+
+      <com.whhcxw.ui.Titlebar2
+       xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/casemes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar" >
+
+        <com.whhcxw.ui.CaseDetailsScrollView
+            android:id="@+id/CaseDetailsScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip"
+            android:background="@drawable/casedetails_bg"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="5dip"
+            android:paddingTop="13dip" />
+
+        <ImageView
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:paddingTop="8dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/case_details_loop" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/case_line" />
+    </RelativeLayout>
+
+    <FrameLayout
+         android:layout_above="@+id/bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.whhcxw.ui.JasonClosedSlidingDrawer
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+            android:id="@+id/photo_sliding"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            custom:allowSingleTap="true"
+            custom:content="@+id/photo_content"
+            custom:handle="@+id/handle"
+            custom:jasonClosedContentSize="130dp"
+            custom:orientation="vertical" >
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+                android:id="@+id/handle"
+                android:layout_width="fill_parent"
+                android:layout_height="38dip"
+                android:layout_below="@id/casemes"
+                android:background="?attr/titlebar_backgroud"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/default_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/casedetails_picture"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/pic_pull" />
+
+                <!-- 编辑按钮隐藏 ，只能拍照，不能删除 -->
+
+                <Button
+                    android:id="@+id/editbutton"
+                    style="@style/default_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerInside"
+                    android:text="@string/casedetails_edit"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/edit_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/surebutton"
+                        style="@style/default_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="15dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:text="@string/casedetails_sure" />
+
+                    <Button
+                        android:id="@+id/offbutton"
+                        style="@style/default_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dip"
+                        android:layout_marginRight="5dip"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerInside"
+                        android:text="@string/casedetails_off" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.ui.JasonClosedSlidingDrawer"
+                android:id="@+id/photo_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee" >
+
+                <GridView
+                    android:id="@+id/gridview"
+                    style="@style/listView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fadeScrollbars="true"
+                    android:gravity="center_horizontal"
+                    android:numColumns="3" >
+                </GridView>
+
+                <LinearLayout
+                    android:id="@+id/nopicture_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dip"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/nopicture_image"
+                        android:layout_width="@dimen/cry_logo_size"
+                        android:layout_height="@dimen/cry_logo_size"
+                        android:src="@drawable/cry_logo" />
+
+                    <TextView
+                        style="@style/cry_logo_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/casedetails_nopicture" />
+                </LinearLayout>
+            </FrameLayout>
+        </com.whhcxw.ui.JasonClosedSlidingDrawer>
+
+        <Gallery
+            android:id="@+id/photo_content_horizon"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="bottom|left"
+            android:gravity="left"
+            
+            android:spacing="5dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/bottom_bar_bg" >
+
+        <RelativeLayout
+            android:id="@+id/case_detail_bottombar_capture_linear"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/case_detail_bottombar_capture_image"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/bottom_bar_capture" />
+
+            <TextView
+                android:id="@+id/case_detail_bottombar_capture_text"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/case_detail_bottombar_capture_image"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="capture"
+                android:textSize="@dimen/default_title_indicator_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/case_detail_bottombar_capture_linear" >
+
+            <com.whhcxw.ui.HorizontalScrollview
+                android:id="@+id/case_detail_bottombar_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                 android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </com.whhcxw.ui.HorizontalScrollview>
+
+            <LinearLayout
+                android:id="@+id/case_detail_bottombar_pre"
+                android:layout_width="5dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left|center_vertical"
+                android:background="@color/block_solid"
+                android:gravity="center"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                     android:layout_gravity="center"
+                    android:src="@drawable/left_fourgrids_dw" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/case_detail_bottombar_next"
+                android:layout_width="5dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/block_solid"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right_fourgrids_dw" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

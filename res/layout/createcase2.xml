@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+  <com.whhcxw.ui.Titlebar2
+       xmlns:custom="http://schemas.android.com/apk/res/com.whhcxw.MobileCheck"
+        android:id="@+id/titlebar"
+        custom:titlebarBackground="?attr/titlebar_backgroud"
+        custom:titlebarLeftBackground="?attr/titlebar_left_backgroud"
+        custom:titlebarRightBackground="?attr/titlebar_right_backgroud"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:fadeScrollbars="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/create_task_select_tasktype_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginLeft="20dip"
+                android:orientation="horizontal" 
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/survey_button"
+                    android:layout_width="0dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/createcase_survey_back"
+                    android:gravity="center"
+                    android:text="@string/createcase_survey"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+
+                <Button
+                    android:id="@+id/repeat_button"
+                    android:layout_width="0dip"
+                    android:layout_height="50dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/createcase_repeat_front"
+                    android:gravity="center"
+                    android:text="@string/createcase_repeat"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_size" />
+            </LinearLayout>
+
+            <!-- 默认 -->
+
+            <com.whhcxw.ui.tableview.UITableView
+                android:id="@+id/createcase_default"
+                style="@style/UITableView" />
+
+            <!-- 必填 -->
+
+            <com.whhcxw.ui.tableview.UITableView
+                android:id="@+id/createcase_default_not_null"
+                style="@style/UITableView" />
+            <!-- 选填 -->
+
+            <com.whhcxw.ui.tableview.UITableView
+                android:id="@+id/createcase_default_optional"
+                style="@style/UITableView" />
+            
+		 <!-- 事故经过 -->
+            <EditText
+                android:id="@+id/createcase_default_optional_accident_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_edittext_shape"
+                android:gravity="left|top"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:hint="@string/create_case_accident_history" />
+            
+		 <!-- 备注 -->
+            <EditText
+                android:id="@+id/createcase_default_optional_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_edittext_shape"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="left|top"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:hint="@string/create_case_others" />
+
+            <Button
+                android:id="@+id/create"
+                style="?attr/large_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:text="@string/createcase_create" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
